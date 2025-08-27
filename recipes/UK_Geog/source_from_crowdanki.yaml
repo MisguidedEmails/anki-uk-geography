@@ -4,7 +4,7 @@
       part_id: uk geog notes
       sort_order: [Location]
 
-  - note_models_from_crowd_anki:
+  - note_model_from_crowd_anki:
     - source: *deck_name
       part_id: UK Geog
 
