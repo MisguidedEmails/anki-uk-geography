@@ -56,7 +56,7 @@ build/maps/n_ire_counties.shp.zip:
 	mkdir -p build/maps
 
 	curl \
-		'https://osni-spatialni.opendata.arcgis.com/datasets/spatialni::osni-open-data-largescale-boundaries-county-boundaries-.zip?outSR=%7B%22latestWkid%22%3A29902%2C%22wkid%22%3A29900%7D' \
+		'https://hub.arcgis.com/api/v3/datasets/f1f716b3f1e542e39d36e45438d5e240_1/downloads/data?format=shp&spatialRefId=29902&where=1%3D1' \
 		-o build/maps/n_ire_counties.shp.zip
 
 build/maps/n_ire_counties/*: build/maps/n_ire_counties.shp.zip
