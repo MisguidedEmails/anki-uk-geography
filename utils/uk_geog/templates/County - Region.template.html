@@ -16,6 +16,9 @@
 --
 
 <style>
+  [id='Cities'], [id='Bodies of Water'] {
+    visibility: hidden;
+  }
   [id='{{MacroLocation}}']{
     fill: #2ECC40;
   }
@@ -36,7 +39,7 @@
   <div class="value value--top">{{County}}</div>
 
   <hr>
-
+  
   <div class="type">Region?</div>
   <div class="center">{{type:MacroLocation}}</div>
 

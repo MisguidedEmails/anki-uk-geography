@@ -1,7 +1,16 @@
 {{#County}}
   <style>
+    [id="Bodies of Water"], [id='Cities']{
+      visibility: hidden;
+    }
     [id="{{County}}"]{
       fill: #2ECC40;
+    }
+    [id='{{County}}'].cityCounty {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: jump 0.75s;
+      animation-iteration-count: infinite;
     }
   </style>
 
@@ -26,15 +35,24 @@
 --
 
 <style>
+  [id="Bodies of Water"], [id='Cities']{
+    visibility: hidden;
+  }
   [id="{{County}}"]{
     fill: #2ECC40;
+  }
+  [id='{{County}}'].cityCounty {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: jump 0.75s;
+    animation-iteration-count: infinite;
   }
 </style>
 
 
 <header>
   <div class="type">County?</div>
-  <div class="center">{{type:County}}</div>
+  <div class="center">{{type:City}}</div>
 
   <hr>
 
