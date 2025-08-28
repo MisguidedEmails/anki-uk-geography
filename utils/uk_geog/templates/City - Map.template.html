@@ -27,7 +27,9 @@
 --
 
 <style>
-    [id='Bodies of Water'], [id='Cities'] > :not([id='{{City}}']) {
+    [id='Cities'] > :not([id='{{MacroLocation}}']),
+    [id='Cities'] [id='{{MacroLocation}}'] > :not([id='{{City}}']),
+    [id='Bodies of Water'] {
         visibility: hidden;
     }
     [id='{{City}}'].cityCounty {
