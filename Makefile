@@ -1,7 +1,5 @@
 # TODO: Body-of-Water maps
 # TODO: Body-of-Water templates
-# TODO: Include mapshaper in project node_modules
-# TODO: Include SVGO in project node_moudles
 # TODO: requires node, jq, zip, unzip (versions)
 # TODO: split out maps into seperate makefile
 
