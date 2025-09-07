@@ -31,12 +31,10 @@
 --
 
 <style>
-  [id='Cities'] > :not([id='{{MacroLocation}}']),
-  [id='Cities'] [id='{{MacroLocation}}'] > :not([id='{{City}}']),
-  [id='Bodies of Water'] {
+  [id='Cities'] > :not([id='{{Location}}']), [id='Bodies of Water'] {
     visibility: hidden;
   }
-  [id='Regions'] > * > [id='{{City}}']{
+  [id='Regions'] > * > [id='{{Location}}']{
     animation: jump 0.75s;
     animation-iteration-count: infinite;
     transform-box: fill-box;
